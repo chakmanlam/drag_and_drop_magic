@@ -1,3 +1,14 @@
-<div data-controller="drag-and-drop"
-    data-action="mousedown->drag-and-drop#mousedown mouseup->drag-and-drop#mouseup mousemove->drag-and-drop#mousemove"
-      class="h-100 w-100 bg-lightgreen p-absolute"></div>
+
+<div data-controller="drag-and-drop">
+  <div data-action="mousedown->drag-and-drop#mousedown mouseup->drag-and-drop#mouseup mousemove->drag-and-drop#mousemove"
+    id="drag-box"
+    class="drag-and-drop-box">
+  Drag me!
+  </div>
+
+  <div data-action="mouseover->drag-and-drop#mouseover mouseup->drag-and-drop#mouseup"
+    id="trash-can"
+    class="trash-can">
+  Trash Can Is Closed
+  </div>
+</div>

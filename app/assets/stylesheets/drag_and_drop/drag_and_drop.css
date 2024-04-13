@@ -1,12 +1,30 @@
-.h-100 {
+.drag-and-drop-box {
   height: 100px;
-}
-.w-100 {
   width: 100px;
-}
-.bg-lightgreen {
-  background-color: lightgreen;
-}
-.p-absolute {
+  background-color: pink;
   position: absolute;
+  pointer-events: auto;
+  text-align: center;
+  line-height: 100px;
+  font-size: 10px;
+}
+
+.trash-can {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+  color: white;
+  pointer-events: auto;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 10px;
+}
+
+.glow {
+  box-shadow: 0 0 15px 5px rgba(255, 255, 0, 0.75);
+/*  transform: scale(0.9);*/
+  transition: box-shadow 0.2s ease-out;
 }
